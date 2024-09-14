@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.0",
+    "cypress": "^13.14.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "babel-loader": "^9.1.3",
+    "cucumber": "^6.0.7",
+    "node-fetch": "^3.3.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e"
+  },
+  "scripts": {
+    "e2e:chrome": "cypress run --browser chrome"
+  }
+}
