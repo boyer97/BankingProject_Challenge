@@ -9,4 +9,6 @@ module.exports = defineConfig({
     specPattern: 'cypress/e2e/**/*.feature',
     "supportFile": false
   },
+  reporter: 'mochawesome',
+  
 });
